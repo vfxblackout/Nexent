@@ -14,7 +14,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img 
-                src="https://static.wikia.nocookie.net/logopedia/images/2/2c/Nexent_Bank.svg/revision/latest?cb=20250712111731" 
+                src="/nexent-logo.svg" 
                 alt="Nexent Bank Logo" 
                 className="h-8 brightness-0 invert"
               />
