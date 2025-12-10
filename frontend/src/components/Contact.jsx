@@ -87,18 +87,6 @@ const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-6 border-emerald-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-emerald-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.contact.info.hours}</h3>
-                  <p className="text-gray-600">{t.contact.info.hoursText}</p>
-                </div>
-              </div>
-            </Card>
-
             <Card className="p-6 bg-gradient-to-br from-emerald-50 to-white border-emerald-100">
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
