@@ -33,9 +33,9 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
+          <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
             <img 
-              src="https://static.wikia.nocookie.net/logopedia/images/2/2c/Nexent_Bank.svg/revision/latest?cb=20250712111731" 
+              src="/nexent-logo.svg" 
               alt="Nexent Bank Logo" 
               className="h-8 md:h-10"
             />
