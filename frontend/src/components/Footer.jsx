@@ -12,11 +12,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Brand Section */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">N</span>
-              </div>
-              <span className="text-xl font-bold">Nexent Bank</span>
+            <div className="mb-4">
+              <img 
+                src="https://static.wikia.nocookie.net/logopedia/images/2/2c/Nexent_Bank.svg/revision/latest?cb=20250712111731" 
+                alt="Nexent Bank Logo" 
+                className="h-8 brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 mb-6">
               {t.footer.tagline}
