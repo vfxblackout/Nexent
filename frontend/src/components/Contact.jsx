@@ -80,8 +80,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.contact.info.email}</h3>
-                  <a href="mailto:info@nexentbank.it" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200">
+                  <a href="mailto:info@nexentbank.it" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block mb-1">
                     info@nexentbank.it
+                  </a>
+                  <a href="mailto:nexent.lps@pec.it" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block">
+                    nexent.lps@pec.it
                   </a>
                 </div>
               </div>
@@ -93,9 +96,9 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Nexent Bank Italia</h3>
-                  <p className="text-gray-600">
-                    {t.contact.title.includes('Contattaci') ? 'Filiale Italiana' : 'Italian Branch'}
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.contact.info.address}</h3>
+                  <p className="text-gray-600 whitespace-pre-line">
+                    {t.contact.info.addressText}
                   </p>
                 </div>
               </div>
