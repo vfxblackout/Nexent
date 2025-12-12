@@ -19,15 +19,11 @@ export const translations = {
     about: {
       title: 'Chi Siamo',
       subtitle: 'Un partner bancario su cui puoi contare',
-      description: 'Nexent Bank Italia è la filiale italiana di Nexent Bank, un istituto finanziario dinamico e innovativo che offre soluzioni bancarie personalizzate. Con una forte presenza europea, combiniamo esperienza internazionale con conoscenza locale per fornire servizi finanziari eccellenti ai nostri clienti italiani.',
-      mission: 'La nostra missione',
-      missionText: 'Fornire servizi bancari digitali, accessibili e personalizzati che aiutino i nostri clienti a raggiungere i loro obiettivi finanziari con fiducia e sicurezza.',
-      values: 'I nostri valori',
-      valuesList: [
-        { title: 'Trasparenza', text: 'Comunicazione chiara e onesta in ogni interazione' },
-        { title: 'Innovazione', text: 'Soluzioni digitali all\'avanguardia per il banking moderno' },
-        { title: 'Affidabilità', text: 'Un partner solido per le tue esigenze finanziarie' }
-      ]
+      description: 'Siamo una banca boutique con sede centrale ad Amsterdam e filiali e clienti internazionali in tutto il mondo. Le nostre sedi principali si trovano nei Paesi Bassi, in Svizzera e in Romania. Abbiamo inoltre filiali in Germania, Malta e Ucraina.',
+      italyNote: 'In Italia la Banca opera in libera prestazione di servizi, autorizzazione Banca d\'Italia n.21030.',
+      services: 'I nostri servizi',
+      servicesSubtitle: 'Soluzioni bancarie su misura per le tue esigenze',
+      servicesNote: 'Per informazioni dettagliate sui nostri servizi, contattaci.'
     },
     why: {
       title: 'Perché Scegliere Nexent Bank',
