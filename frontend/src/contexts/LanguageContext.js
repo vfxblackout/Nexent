@@ -100,15 +100,11 @@ export const translations = {
     about: {
       title: 'About Us',
       subtitle: 'A banking partner you can rely on',
-      description: 'Nexent Bank Italy is the Italian branch of Nexent Bank, a dynamic and innovative financial institution offering personalized banking solutions. With a strong European presence, we combine international expertise with local knowledge to provide excellent financial services to our Italian customers.',
-      mission: 'Our Mission',
-      missionText: 'To provide digital, accessible, and personalized banking services that help our clients achieve their financial goals with confidence and security.',
-      values: 'Our Values',
-      valuesList: [
-        { title: 'Transparency', text: 'Clear and honest communication in every interaction' },
-        { title: 'Innovation', text: 'Cutting-edge digital solutions for modern banking' },
-        { title: 'Reliability', text: 'A solid partner for your financial needs' }
-      ]
+      description: 'We are a boutique bank with headquarters in Amsterdam and international subsidiaries and clients all over the world. Our main offices are located in the Netherlands, Switzerland and Romania. In addition, we also have offices in Germany, Malta and Ukraine.',
+      italyNote: 'In Italy, the Bank operates under freedom to provide services, Bank of Italy authorization no.21030.',
+      services: 'Our Services',
+      servicesSubtitle: 'Tailored banking solutions for your needs',
+      servicesNote: 'For detailed information about our services, please contact us.'
     },
     why: {
       title: 'Why Choose Nexent Bank',
