@@ -151,8 +151,8 @@ export const translations = {
       info: {
         phone: 'Phone',
         email: 'Email',
-        hours: 'Hours',
-        hoursText: 'Mon - Fri: 9:00 AM - 6:00 PM'
+        address: 'Address',
+        addressText: 'Karspeldreef 6A\n1101 CJ Amsterdam\nThe Netherlands'
       }
     },
     footer: {
