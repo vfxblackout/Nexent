@@ -70,8 +70,8 @@ export const translations = {
       info: {
         phone: 'Telefono',
         email: 'Email',
-        hours: 'Orari',
-        hoursText: 'Lun - Ven: 9:00 - 18:00'
+        address: 'Indirizzo',
+        addressText: 'Karspeldreef 6A\n1101 CJ Amsterdam\nThe Netherlands'
       }
     },
     footer: {
