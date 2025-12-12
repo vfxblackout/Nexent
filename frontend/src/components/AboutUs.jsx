@@ -1,16 +1,10 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { CheckCircle2, Target, Heart, Lightbulb } from 'lucide-react';
+import { Building2, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const AboutUs = () => {
   const { t } = useLanguage();
-
-  const valueIcons = {
-    0: CheckCircle2,
-    1: Lightbulb,
-    2: Heart
-  };
 
   return (
     <section id="about" className="py-20 md:py-32 bg-white">
@@ -25,54 +19,93 @@ const AboutUs = () => {
           </p>
         </div>
 
-        {/* Main Description */}
-        <div className="mb-20">
-          <Card className="p-8 md:p-12 bg-gradient-to-br from-emerald-50 to-white border-emerald-100 shadow-lg">
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              {t.about.description}
+        {/* Main Content with Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
+          {/* Text Content */}
+          <div>
+            <Card className="p-8 md:p-10 bg-gradient-to-br from-emerald-50 to-white border-emerald-100 shadow-lg">
+              <div className="flex items-start space-x-3 mb-4">
+                <Building2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    {t.about.description}
+                  </p>
+                  <div className="bg-emerald-100 border-l-4 border-emerald-600 p-4 rounded">
+                    <div className="flex items-start space-x-2">
+                      <MapPin className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-sm text-gray-700 leading-relaxed italic">
+                        {t.about.italyNote}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+          
+          {/* Image */}
+          <div className="relative">
+            <img 
+              src="https://images.unsplash.com/photo-1523270918669-1fd17ac1742d?w=800&q=80" 
+              alt="Nexent Bank Building" 
+              className="rounded-lg shadow-2xl w-full h-[400px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent rounded-lg"></div>
+          </div>
+        </div>
+
+        {/* Services Section */}
+        <div>
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+              {t.about.services}
+            </h3>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              {t.about.servicesSubtitle}
+            </p>
+          </div>
+          
+          <Card className="p-8 md:p-12 bg-white border-emerald-100 shadow-lg">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b-2 border-emerald-600">
+                    <th className="text-left py-4 px-4 text-emerald-700 font-semibold text-lg">
+                      {t.about.services}
+                    </th>
+                    <th className="text-left py-4 px-4 text-emerald-700 font-semibold text-lg">
+                      Descrizione
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-4 px-4 font-medium text-gray-900">Corporate Lending</td>
+                    <td className="py-4 px-4 text-gray-600">Soluzioni di finanziamento per imprese</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-4 px-4 font-medium text-gray-900">Trade Finance</td>
+                    <td className="py-4 px-4 text-gray-600">Finanziamento del commercio internazionale</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-4 px-4 font-medium text-gray-900">Commodity Finance</td>
+                    <td className="py-4 px-4 text-gray-600">Finanziamento delle materie prime</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-4 px-4 font-medium text-gray-900">Project Finance</td>
+                    <td className="py-4 px-4 text-gray-600">Finanziamento di progetti industriali</td>
+                  </tr>
+                  <tr className="hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-4 px-4 font-medium text-gray-900">Marine Finance</td>
+                    <td className="py-4 px-4 text-gray-600">Finanziamento navale e marittimo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray-500 italic mt-6 text-center">
+              {t.about.servicesNote}
             </p>
           </Card>
-        </div>
-
-        {/* Mission */}
-        <div className="mb-16">
-          <div className="flex items-start space-x-4 mb-6">
-            <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <Target className="w-6 h-6 text-emerald-600" />
-            </div>
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                {t.about.mission}
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {t.about.missionText}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Values */}
-        <div>
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-            {t.about.values}
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {t.about.valuesList.map((value, index) => {
-              const IconComponent = valueIcons[index];
-              return (
-                <Card
-                  key={index}
-                  className="p-6 md:p-8 hover:shadow-xl transition-all duration-300 hover:scale-105 border-emerald-100 group cursor-pointer"
-                >
-                  <div className="w-14 h-14 bg-emerald-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-600 transition-colors duration-300">
-                    <IconComponent className="w-7 h-7 text-emerald-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{value.text}</p>
-                </Card>
-              );
-            })}
-          </div>
         </div>
       </div>
     </section>
