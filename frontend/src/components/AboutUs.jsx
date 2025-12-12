@@ -71,33 +71,61 @@ const AboutUs = () => {
                 <thead>
                   <tr className="border-b-2 border-emerald-600">
                     <th className="text-left py-4 px-4 text-emerald-700 font-semibold text-lg">
-                      {t.about.services}
+                      Servizio
                     </th>
                     <th className="text-left py-4 px-4 text-emerald-700 font-semibold text-lg">
-                      Descrizione
+                      Modalità
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-gray-900">Corporate Lending</td>
-                    <td className="py-4 px-4 text-gray-600">Soluzioni di finanziamento per imprese</td>
+                    <td className="py-3 px-4 font-medium text-gray-900">Esecuzione di ordini per conto dei clienti</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
                   </tr>
                   <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-gray-900">Trade Finance</td>
-                    <td className="py-4 px-4 text-gray-600">Finanziamento del commercio internazionale</td>
+                    <td className="py-3 px-4 font-medium text-gray-900">Ricezione e trasmissione di ordini</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
                   </tr>
                   <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-gray-900">Commodity Finance</td>
-                    <td className="py-4 px-4 text-gray-600">Finanziamento delle materie prime</td>
+                    <td className="py-3 px-4 font-medium text-gray-900">Cassette sicurezza e ammin. strum. fin. c/clienti</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
                   </tr>
                   <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-gray-900">Project Finance</td>
-                    <td className="py-4 px-4 text-gray-600">Finanziamento di progetti industriali</td>
+                    <td className="py-3 px-4 font-medium text-gray-900">Negoziazione per conto proprio</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-3 px-4 font-medium text-gray-900">Operazioni in cambi</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-3 px-4 font-medium text-gray-900">Ope. in strumenti finanziari a termine e opzioni</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-3 px-4 font-medium text-gray-900">Operazioni in valori mobiliari</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-3 px-4 font-medium text-gray-900">Ope. in contratti su tassi di cambio e d'interesse</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-3 px-4 font-medium text-gray-900">Rilascio garanzie e impegni di firma</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-3 px-4 font-medium text-gray-900">Raccolta di depositi o altri fondi rimborsabili</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
+                    <td className="py-3 px-4 font-medium text-gray-900">Operazioni di prestito</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
                   </tr>
                   <tr className="hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-gray-900">Marine Finance</td>
-                    <td className="py-4 px-4 text-gray-600">Finanziamento navale e marittimo</td>
+                    <td className="py-3 px-4 font-medium text-gray-900">Operazioni in strumenti di mercato monetario</td>
+                    <td className="py-3 px-4 text-gray-600">Libera prestazione di servizi</td>
                   </tr>
                 </tbody>
               </table>
