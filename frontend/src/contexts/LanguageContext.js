@@ -7,6 +7,7 @@ export const translations = {
     nav: {
       home: 'Home',
       about: 'Chi Siamo',
+      services: 'Servizi',
       why: 'Perché Sceglierci',
       contact: 'Contatti'
     },
