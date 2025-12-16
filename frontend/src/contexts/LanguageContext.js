@@ -83,6 +83,21 @@ export const translations = {
         terms: 'Termini e Condizioni',
         cookies: 'Cookie Policy'
       }
+    },
+    services: {
+      title: 'I Nostri Servizi',
+      subtitle: 'Elenco completo dei servizi bancari autorizzati in Italia',
+      backToHome: 'Torna alla Home',
+      note: 'Per informazioni dettagliate sui nostri servizi, contattaci.',
+      tableHeaders: {
+        service: 'Servizio',
+        modality: 'Modalità',
+        state: 'Stato',
+        authDate: 'Data Autorizzazione',
+        revokeDate: 'Data Revoca',
+        startDate: 'Inizio Operatività',
+        endDate: 'Fine Operatività'
+      }
     }
   },
   en: {
