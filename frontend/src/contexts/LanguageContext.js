@@ -89,6 +89,7 @@ export const translations = {
     nav: {
       home: 'Home',
       about: 'About Us',
+      services: 'Services',
       why: 'Why Choose Us',
       contact: 'Contact'
     },
