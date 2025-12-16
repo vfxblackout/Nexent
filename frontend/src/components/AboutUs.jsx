@@ -54,7 +54,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Services Section */}
+        {/* Services Section with CTA */}
         <div>
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
@@ -65,149 +65,24 @@ const AboutUs = () => {
             </p>
           </div>
           
-          <Card className="p-8 md:p-12 bg-white border-emerald-100 shadow-lg">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b-2 border-emerald-600">
-                    <th className="text-left py-3 px-3 text-emerald-700 font-semibold">
-                      Servizio
-                    </th>
-                    <th className="text-left py-3 px-3 text-emerald-700 font-semibold">
-                      Modalità
-                    </th>
-                    <th className="text-left py-3 px-3 text-emerald-700 font-semibold">
-                      Stato
-                    </th>
-                    <th className="text-left py-3 px-3 text-emerald-700 font-semibold">
-                      Data Autorizzazione
-                    </th>
-                    <th className="text-left py-3 px-3 text-emerald-700 font-semibold">
-                      Data Revoca
-                    </th>
-                    <th className="text-left py-3 px-3 text-emerald-700 font-semibold">
-                      Inizio Operatività
-                    </th>
-                    <th className="text-left py-3 px-3 text-emerald-700 font-semibold">
-                      Fine Operatività
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Esecuzione di ordini per conto dei clienti</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Ricezione e trasmissione di ordini</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Cassette sicurezza e ammin. strum. fin. c/clienti</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Negoziazione per conto proprio</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-11-20</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Operazioni in cambi</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Ope. in strumenti finanziari a termine e opzioni</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Operazioni in valori mobiliari</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Ope. in contratti su tassi di cambio e d'interesse</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">2025-08-01</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Rilascio garanzie e impegni di firma</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Raccolta di depositi o altri fondi rimborsabili</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Operazioni di prestito</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                  <tr className="hover:bg-emerald-50 transition-colors duration-200">
-                    <td className="py-3 px-3 font-medium text-gray-900">Operazioni in strumenti di mercato monetario</td>
-                    <td className="py-3 px-3 text-gray-600">Libera prestazione</td>
-                    <td className="py-3 px-3 text-gray-600">Italia</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                    <td className="py-3 px-3 text-gray-600">1994-04-21</td>
-                    <td className="py-3 px-3 text-gray-600">9999-12-31</td>
-                  </tr>
-                </tbody>
-              </table>
+          <Card className="p-8 md:p-12 bg-gradient-to-br from-emerald-50 to-white border-emerald-100 shadow-lg text-center">
+            <div className="max-w-2xl mx-auto">
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                Nexent Bank opera in Italia con una vasta gamma di servizi bancari autorizzati, tra cui operazioni di prestito, gestione depositi, operazioni in cambi, e servizi di investment banking. 
+              </p>
+              <a
+                href="/servizi"
+                className="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                {t.about.services}
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+              <p className="text-sm text-gray-500 italic mt-6">
+                {t.about.servicesNote}
+              </p>
             </div>
-            <p className="text-sm text-gray-500 italic mt-6 text-center">
-              {t.about.servicesNote}
-            </p>
           </Card>
         </div>
       </div>
