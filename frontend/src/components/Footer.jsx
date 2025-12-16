@@ -72,6 +72,14 @@ const Footer = () => {
                 </button>
               </li>
               <li>
+                <a
+                  href="/servizi"
+                  className="text-sm text-gray-400 hover:text-emerald-400 transition-colors duration-200"
+                >
+                  {t.nav.services}
+                </a>
+              </li>
+              <li>
                 <button
                   onClick={() => {
                     const element = document.getElementById('why');
