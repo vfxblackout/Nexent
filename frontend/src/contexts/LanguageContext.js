@@ -180,6 +180,21 @@ export const translations = {
         terms: 'Terms & Conditions',
         cookies: 'Cookie Policy'
       }
+    },
+    services: {
+      title: 'Our Services',
+      subtitle: 'Complete list of banking services authorized in Italy',
+      backToHome: 'Back to Home',
+      note: 'For detailed information about our services, please contact us.',
+      tableHeaders: {
+        service: 'Service',
+        modality: 'Modality',
+        state: 'State',
+        authDate: 'Authorization Date',
+        revokeDate: 'Revocation Date',
+        startDate: 'Start Date',
+        endDate: 'End Date'
+      }
     }
   }
 };
