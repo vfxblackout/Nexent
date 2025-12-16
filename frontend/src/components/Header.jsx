@@ -112,6 +112,12 @@ const Header = () => {
             >
               {t.nav.about}
             </button>
+            <a
+              href="/servizi"
+              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors duration-200 rounded-md"
+            >
+              {t.nav.services}
+            </a>
             <button
               onClick={() => scrollToSection('why')}
               className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors duration-200 rounded-md"
