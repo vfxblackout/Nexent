@@ -95,7 +95,7 @@ const GaranziaPage = () => {
 
         <div className={`bg-gray-50 border-l-4 ${isApprovato ? 'border-emerald-600' : 'border-red-600'} p-6 md:p-8 mb-8`}>
           <p className="text-lg md:text-xl text-gray-800 leading-relaxed text-center mb-6">
-            La garanzia fideiussoria di <strong>{garanzia.nome_completo}</strong> è stato{' '}
+            La garanzia fideiussoria del contraente <strong>{garanzia.contraente}</strong> è stato{' '}
             <strong className={isApprovato ? 'text-emerald-600' : 'text-red-600'}>
               {garanzia.stato}
             </strong>.
@@ -124,12 +124,12 @@ const GaranziaPage = () => {
             
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <p className="text-sm text-gray-600 mb-1">{t.garanzia.dataInizio}</p>
-              <p className="text-lg font-semibold text-gray-900">{garanzia.data_inizio}</p>
+              <p className="text-lg font-semibold text-gray-900">{formatDate(garanzia.data_inizio)}</p>
             </div>
             
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <p className="text-sm text-gray-600 mb-1">{t.garanzia.dataCessazione}</p>
-              <p className="text-lg font-semibold text-gray-900">{garanzia.data_cessazione}</p>
+              <p className="text-lg font-semibold text-gray-900">{formatDate(garanzia.data_cessazione)}</p>
             </div>
           </div>
         </div>
