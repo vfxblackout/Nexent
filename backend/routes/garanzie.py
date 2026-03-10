@@ -46,7 +46,17 @@ async def create_garanzia(garanzia_data: GaranziaCreate):
 @garanzia_router.get("/garanzie", response_model=List[Garanzia])
 async def get_garanzie():
     garanzie = await db.garanzie.find().sort("created_at", -1).limit(100).to_list(100)
-    return [Garanzia(**garanzia) for garanzia in garanzie]
+    result = []
+    for garanzia in garanzie:
+        try:
+            # Skip old garanzie without required fields
+            if all(k in garanzia for k in ['numero_garanzia', 'contraente', 'beneficiario', 
+                                            'importo_garantito', 'data_inizio', 'data_cessazione']):
+                result.append(Garanzia(**garanzia))
+        except Exception as e:
+            # Skip invalid garanzie
+            continue
+    return result
 
 # Get single garanzia (public)
 @garanzia_router.get("/garanzia/{garanzia_id}")
