@@ -258,10 +258,16 @@ export const translations = {
         error: 'Invalid credentials'
       },
       garanzie: {
-        title: 'Insurance Guarantee Management',
+        title: 'Surety Guarantee Management',
         createNew: 'New Guarantee',
         form: {
+          numeroGaranzia: 'Guarantee Number',
           nomeCompleto: 'Full Name',
+          contraente: 'Contractor',
+          beneficiario: 'Beneficiary',
+          importoGarantito: 'Guaranteed Amount',
+          dataInizio: 'Start Date of Surety',
+          dataCessazione: 'End Date of Surety',
           data: 'Date',
           stato: 'Status',
           approvato: 'Approved',
@@ -279,8 +285,14 @@ export const translations = {
       }
     },
     garanzia: {
-      title: 'Insurance Guarantee Status',
-      message: 'The insurance guarantee for {nome} dated {data} has been {stato}.',
+      title: 'Surety Guarantee Status',
+      numeroGaranzia: 'Guarantee Number',
+      contraente: 'Contractor',
+      beneficiario: 'Beneficiary',
+      importoGarantito: 'Guaranteed Amount',
+      dataInizio: 'Start Date',
+      dataCessazione: 'End Date',
+      message: 'The surety guarantee for {nome} has been {stato}.',
       approvato: 'approved',
       denegato: 'denied',
       saluti: 'Best regards,',
