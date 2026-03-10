@@ -282,8 +282,10 @@ const AdminDashboard = () => {
                 <table className="w-full">
                   <thead>
                     <tr className="border-b-2 border-emerald-600">
+                      <th className="text-left py-3 px-4 text-emerald-700 font-semibold">N. Garanzia</th>
                       <th className="text-left py-3 px-4 text-emerald-700 font-semibold">Nome Completo</th>
-                      <th className="text-left py-3 px-4 text-emerald-700 font-semibold">Data</th>
+                      <th className="text-left py-3 px-4 text-emerald-700 font-semibold">Contraente</th>
+                      <th className="text-left py-3 px-4 text-emerald-700 font-semibold">Importo</th>
                       <th className="text-left py-3 px-4 text-emerald-700 font-semibold">Stato</th>
                       <th className="text-left py-3 px-4 text-emerald-700 font-semibold">Azioni</th>
                     </tr>
@@ -291,8 +293,10 @@ const AdminDashboard = () => {
                   <tbody>
                     {garanzie.map((garanzia) => (
                       <tr key={garanzia.id} className="border-b border-gray-200 hover:bg-emerald-50 transition-colors">
-                        <td className="py-3 px-4 font-medium text-gray-900">{garanzia.nome_completo}</td>
-                        <td className="py-3 px-4 text-gray-600">{garanzia.data}</td>
+                        <td className="py-3 px-4 font-medium text-gray-900">{garanzia.numero_garanzia}</td>
+                        <td className="py-3 px-4 text-gray-700">{garanzia.nome_completo}</td>
+                        <td className="py-3 px-4 text-gray-600">{garanzia.contraente}</td>
+                        <td className="py-3 px-4 text-gray-600">{garanzia.importo_garantito}</td>
                         <td className="py-3 px-4">
                           <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                             garanzia.stato === 'approvato' 
