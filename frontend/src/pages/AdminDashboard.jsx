@@ -56,7 +56,16 @@ const AdminDashboard = () => {
         title: t.admin.garanzie.form.success,
       });
       setLastCreatedId(response.data.id);
-      setFormData({ nome_completo: '', data: '', stato: 'approvato' });
+      setFormData({ 
+        numero_garanzia: '',
+        nome_completo: '',
+        contraente: '',
+        beneficiario: '',
+        importo_garantito: '',
+        data_inizio: '',
+        data_cessazione: '',
+        stato: 'approvato'
+      });
       setShowForm(false);
       loadGaranzie();
     } catch (error) {
