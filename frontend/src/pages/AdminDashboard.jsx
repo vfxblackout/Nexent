@@ -20,7 +20,6 @@ const AdminDashboard = () => {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     numero_garanzia: '',
-    nome_completo: '',
     contraente: '',
     beneficiario: '',
     importo_garantito: '',
