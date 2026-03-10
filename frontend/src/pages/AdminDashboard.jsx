@@ -137,20 +137,6 @@ const AdminDashboard = () => {
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      {t.admin.garanzie.form.nomeCompleto}
-                    </label>
-                    <Input
-                      type="text"
-                      required
-                      value={formData.nome_completo}
-                      onChange={(e) => setFormData({ ...formData, nome_completo: e.target.value })}
-                      placeholder="Mario Rossi"
-                      className="w-full"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">
                       {t.admin.garanzie.form.contraente}
                     </label>
                     <Input
