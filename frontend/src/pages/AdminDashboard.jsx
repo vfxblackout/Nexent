@@ -122,31 +122,102 @@ const AdminDashboard = () => {
             <Card className="p-8 mb-8 border-emerald-100 shadow-lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t.admin.garanzie.createNew}</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    {t.admin.garanzie.form.nomeCompleto}
-                  </label>
-                  <Input
-                    type="text"
-                    required
-                    value={formData.nome_completo}
-                    onChange={(e) => setFormData({ ...formData, nome_completo: e.target.value })}
-                    placeholder="Mario Rossi"
-                    className="w-full"
-                  />
-                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.admin.garanzie.form.numeroGaranzia}
+                    </label>
+                    <Input
+                      type="text"
+                      required
+                      value={formData.numero_garanzia}
+                      onChange={(e) => setFormData({ ...formData, numero_garanzia: e.target.value })}
+                      placeholder="GAR-2025-001"
+                      className="w-full"
+                    />
+                  </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    {t.admin.garanzie.form.data}
-                  </label>
-                  <Input
-                    type="date"
-                    required
-                    value={formData.data}
-                    onChange={(e) => setFormData({ ...formData, data: e.target.value })}
-                    className="w-full"
-                  />
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.admin.garanzie.form.nomeCompleto}
+                    </label>
+                    <Input
+                      type="text"
+                      required
+                      value={formData.nome_completo}
+                      onChange={(e) => setFormData({ ...formData, nome_completo: e.target.value })}
+                      placeholder="Mario Rossi"
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.admin.garanzie.form.contraente}
+                    </label>
+                    <Input
+                      type="text"
+                      required
+                      value={formData.contraente}
+                      onChange={(e) => setFormData({ ...formData, contraente: e.target.value })}
+                      placeholder="Azienda SRL"
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.admin.garanzie.form.beneficiario}
+                    </label>
+                    <Input
+                      type="text"
+                      required
+                      value={formData.beneficiario}
+                      onChange={(e) => setFormData({ ...formData, beneficiario: e.target.value })}
+                      placeholder="Ente Pubblico"
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.admin.garanzie.form.importoGarantito}
+                    </label>
+                    <Input
+                      type="text"
+                      required
+                      value={formData.importo_garantito}
+                      onChange={(e) => setFormData({ ...formData, importo_garantito: e.target.value })}
+                      placeholder="€ 50.000,00"
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.admin.garanzie.form.dataInizio}
+                    </label>
+                    <Input
+                      type="date"
+                      required
+                      value={formData.data_inizio}
+                      onChange={(e) => setFormData({ ...formData, data_inizio: e.target.value })}
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.admin.garanzie.form.dataCessazione}
+                    </label>
+                    <Input
+                      type="date"
+                      required
+                      value={formData.data_cessazione}
+                      onChange={(e) => setFormData({ ...formData, data_cessazione: e.target.value })}
+                      className="w-full"
+                    />
+                  </div>
                 </div>
 
                 <div>
