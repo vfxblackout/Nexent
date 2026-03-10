@@ -87,13 +87,44 @@ const GaranziaPage = () => {
         </div>
 
         <div className={`bg-gray-50 border-l-4 ${isApprovato ? 'border-emerald-600' : 'border-red-600'} p-6 md:p-8 mb-8`}>
-          <p className="text-lg md:text-xl text-gray-800 leading-relaxed text-center">
-            La garanzia di assicurazione di <strong>{garanzia.nome_completo}</strong> con data{' '}
-            <strong>{garanzia.data}</strong> è stato{' '}
+          <p className="text-lg md:text-xl text-gray-800 leading-relaxed text-center mb-6">
+            La garanzia fideiussoria di <strong>{garanzia.nome_completo}</strong> è stato{' '}
             <strong className={isApprovato ? 'text-emerald-600' : 'text-red-600'}>
               {garanzia.stato}
             </strong>.
           </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <p className="text-sm text-gray-600 mb-1">{t.garanzia.numeroGaranzia}</p>
+              <p className="text-lg font-semibold text-gray-900">{garanzia.numero_garanzia}</p>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <p className="text-sm text-gray-600 mb-1">{t.garanzia.contraente}</p>
+              <p className="text-lg font-semibold text-gray-900">{garanzia.contraente}</p>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <p className="text-sm text-gray-600 mb-1">{t.garanzia.beneficiario}</p>
+              <p className="text-lg font-semibold text-gray-900">{garanzia.beneficiario}</p>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <p className="text-sm text-gray-600 mb-1">{t.garanzia.importoGarantito}</p>
+              <p className="text-lg font-semibold text-emerald-600">{garanzia.importo_garantito}</p>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <p className="text-sm text-gray-600 mb-1">{t.garanzia.dataInizio}</p>
+              <p className="text-lg font-semibold text-gray-900">{garanzia.data_inizio}</p>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg border border-gray-200">
+              <p className="text-sm text-gray-600 mb-1">{t.garanzia.dataCessazione}</p>
+              <p className="text-lg font-semibold text-gray-900">{garanzia.data_cessazione}</p>
+            </div>
+          </div>
         </div>
 
         <div className="text-center border-t pt-6">
