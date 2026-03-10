@@ -19,8 +19,13 @@ const AdminDashboard = () => {
   const [garanzie, setGaranzie] = useState([]);
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
+    numero_garanzia: '',
     nome_completo: '',
-    data: '',
+    contraente: '',
+    beneficiario: '',
+    importo_garantito: '',
+    data_inizio: '',
+    data_cessazione: '',
     stato: 'approvato'
   });
   const [lastCreatedId, setLastCreatedId] = useState(null);
