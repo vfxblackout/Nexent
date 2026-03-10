@@ -57,7 +57,6 @@ async def get_garanzia(garanzia_id: str):
     
     return {
         "numero_garanzia": garanzia["numero_garanzia"],
-        "nome_completo": garanzia["nome_completo"],
         "contraente": garanzia["contraente"],
         "beneficiario": garanzia["beneficiario"],
         "importo_garantito": garanzia["importo_garantito"],
