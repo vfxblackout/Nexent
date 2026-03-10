@@ -57,7 +57,6 @@ const AdminDashboard = () => {
       setLastCreatedId(response.data.id);
       setFormData({ 
         numero_garanzia: '',
-        nome_completo: '',
         contraente: '',
         beneficiario: '',
         importo_garantito: '',
