@@ -17,6 +17,13 @@ const GaranziaPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
+  // Format date from yyyy-mm-dd to dd/mm/yyyy
+  const formatDate = (dateString) => {
+    if (!dateString) return '';
+    const [year, month, day] = dateString.split('-');
+    return `${day}/${month}/${year}`;
+  };
+
   useEffect(() => {
     loadGaranzia();
   }, [id]);
