@@ -235,6 +235,46 @@ export const translations = {
         startDate: 'Start Date',
         endDate: 'End Date'
       }
+    },
+    admin: {
+      title: 'Administrative Area',
+      login: {
+        title: 'Admin Login',
+        username: 'Username',
+        password: 'Password',
+        submit: 'Login',
+        error: 'Invalid credentials'
+      },
+      garanzie: {
+        title: 'Insurance Guarantee Management',
+        createNew: 'New Guarantee',
+        form: {
+          nomeCompleto: 'Full Name',
+          data: 'Date',
+          stato: 'Status',
+          approvato: 'Approved',
+          denegato: 'Denied',
+          submit: 'Create Guarantee',
+          success: 'Guarantee created successfully!',
+          downloadQR: 'Download QR Code'
+        },
+        list: {
+          title: 'Guarantees List',
+          empty: 'No guarantees found',
+          downloadQR: 'Download QR',
+          viewPage: 'View Page'
+        }
+      }
+    },
+    garanzia: {
+      title: 'Insurance Guarantee Status',
+      message: 'The insurance guarantee for {nome} dated {data} has been {stato}.',
+      approvato: 'approved',
+      denegato: 'denied',
+      saluti: 'Best regards,',
+      bank: 'Nexent Bank.it',
+      notFound: 'Guarantee not found',
+      backToHome: 'Back to Home'
     }
   }
 };
