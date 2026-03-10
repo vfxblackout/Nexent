@@ -98,6 +98,46 @@ export const translations = {
         startDate: 'Inizio Operatività',
         endDate: 'Fine Operatività'
       }
+    },
+    admin: {
+      title: 'Area Amministrativa',
+      login: {
+        title: 'Accesso Admin',
+        username: 'Username',
+        password: 'Password',
+        submit: 'Accedi',
+        error: 'Credenziali non valide'
+      },
+      garanzie: {
+        title: 'Gestione Garanzie Assicurative',
+        createNew: 'Nuova Garanzia',
+        form: {
+          nomeCompleto: 'Nome Completo',
+          data: 'Data',
+          stato: 'Stato',
+          approvato: 'Approvato',
+          denegato: 'Denegato',
+          submit: 'Crea Garanzia',
+          success: 'Garanzia creata con successo!',
+          downloadQR: 'Scarica QR Code'
+        },
+        list: {
+          title: 'Lista Garanzie',
+          empty: 'Nessuna garanzia trovata',
+          downloadQR: 'Scarica QR',
+          viewPage: 'Vedi Pagina'
+        }
+      }
+    },
+    garanzia: {
+      title: 'Stato Garanzia Assicurativa',
+      message: 'La garanzia di assicurazione di {nome} con data {data} è stato {stato}.',
+      approvato: 'approvato',
+      denegato: 'denegato',
+      saluti: 'Cordiali saluti,',
+      bank: 'Nexent Bank.it',
+      notFound: 'Garanzia non trovata',
+      backToHome: 'Torna alla Home'
     }
   },
   en: {
