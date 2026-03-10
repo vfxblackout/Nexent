@@ -56,8 +56,13 @@ async def get_garanzia(garanzia_id: str):
         raise HTTPException(status_code=404, detail="Garanzia non trovata")
     
     return {
+        "numero_garanzia": garanzia["numero_garanzia"],
         "nome_completo": garanzia["nome_completo"],
-        "data": garanzia["data"],
+        "contraente": garanzia["contraente"],
+        "beneficiario": garanzia["beneficiario"],
+        "importo_garantito": garanzia["importo_garantito"],
+        "data_inizio": garanzia["data_inizio"],
+        "data_cessazione": garanzia["data_cessazione"],
         "stato": garanzia["stato"]
     }
 
