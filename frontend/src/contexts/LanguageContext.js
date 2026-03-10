@@ -109,10 +109,16 @@ export const translations = {
         error: 'Credenziali non valide'
       },
       garanzie: {
-        title: 'Gestione Garanzie Assicurative',
+        title: 'Gestione Garanzie Fideiussorie',
         createNew: 'Nuova Garanzia',
         form: {
+          numeroGaranzia: 'Numero di Garanzia',
           nomeCompleto: 'Nome Completo',
+          contraente: 'Contraente',
+          beneficiario: 'Beneficiario',
+          importoGarantito: 'Importo Garantito',
+          dataInizio: 'Data Inizio Atto Fideiussione',
+          dataCessazione: 'Data Cessazione Atto Fideiussione',
           data: 'Data',
           stato: 'Stato',
           approvato: 'Approvato',
@@ -130,8 +136,14 @@ export const translations = {
       }
     },
     garanzia: {
-      title: 'Stato Garanzia Assicurativa',
-      message: 'La garanzia di assicurazione di {nome} con data {data} è stato {stato}.',
+      title: 'Stato Garanzia Fideiussoria',
+      numeroGaranzia: 'Numero di Garanzia',
+      contraente: 'Contraente',
+      beneficiario: 'Beneficiario',
+      importoGarantito: 'Importo Garantito',
+      dataInizio: 'Data Inizio',
+      dataCessazione: 'Data Cessazione',
+      message: 'La garanzia fideiussoria di {nome} è stato {stato}.',
       approvato: 'approvato',
       denegato: 'denegato',
       saluti: 'Cordiali saluti,',
