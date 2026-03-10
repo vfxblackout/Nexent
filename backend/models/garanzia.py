@@ -5,7 +5,6 @@ import uuid
 
 class GaranziaCreate(BaseModel):
     numero_garanzia: str
-    nome_completo: str
     contraente: str
     beneficiario: str
     importo_garantito: str
@@ -16,7 +15,6 @@ class GaranziaCreate(BaseModel):
 class Garanzia(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     numero_garanzia: str
-    nome_completo: str
     contraente: str
     beneficiario: str
     importo_garantito: str
