@@ -64,7 +64,14 @@ const AdminDashboard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${BACKEND_URL}/api/garanzie`, formData);
+      // Convert dates from dd/mm/yyyy to yyyy-mm-dd before sending
+      const dataToSend = {
+        ...formData,
+        data_inizio: convertDateToBackend(formData.data_inizio),
+        data_cessazione: convertDateToBackend(formData.data_cessazione)
+      };
+      
+      const response = await axios.post(`${BACKEND_URL}/api/garanzie`, dataToSend);
       toast({
         title: t.admin.garanzie.form.success,
       });
@@ -84,6 +91,26 @@ const AdminDashboard = () => {
       toast({
         title: 'Errore',
         description: 'Impossibile creare la garanzia',
+        variant: 'destructive'
+      });
+    }
+  };
+
+  const handleDelete = async (garanziaId) => {
+    if (!window.confirm('Sei sicuro di voler cancellare questa garanzia?')) {
+      return;
+    }
+    
+    try {
+      await axios.delete(`${BACKEND_URL}/api/garanzia/${garanziaId}`);
+      toast({
+        title: 'Garanzia eliminata con successo',
+      });
+      loadGaranzie();
+    } catch (error) {
+      toast({
+        title: 'Errore',
+        description: 'Impossibile eliminare la garanzia',
         variant: 'destructive'
       });
     }
