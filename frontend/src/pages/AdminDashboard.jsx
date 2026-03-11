@@ -36,6 +36,13 @@ const AdminDashboard = () => {
     return `${day}/${month}/${year}`;
   };
 
+  // Convert dd/mm/yyyy to yyyy-mm-dd for backend
+  const convertDateToBackend = (dateString) => {
+    if (!dateString) return '';
+    const [day, month, year] = dateString.split('/');
+    return `${year}-${month}-${day}`;
+  };
+
   useEffect(() => {
     const isLoggedIn = sessionStorage.getItem('admin_logged_in');
     if (!isLoggedIn) {
