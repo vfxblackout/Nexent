@@ -114,3 +114,11 @@ async def get_garanzia_qr(garanzia_id: str):
             "Content-Disposition": f"attachment; filename=qr_garanzia_{safe_filename}.png"
         }
     )
+
+# Delete garanzia (admin only)
+@garanzia_router.delete("/garanzia/{garanzia_id}")
+async def delete_garanzia(garanzia_id: str):
+    result = await db.garanzie.delete_one({"id": garanzia_id})
+    if result.deleted_count == 0:
+        raise HTTPException(status_code=404, detail="Garanzia non trovata")
+    return {"success": True, "message": "Garanzia eliminata con successo"}
