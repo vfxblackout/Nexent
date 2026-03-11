@@ -356,6 +356,14 @@ const AdminDashboard = () => {
                               <ExternalLink className="w-4 h-4 mr-1" />
                               Vedi
                             </Button>
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              onClick={() => handleDelete(garanzia.id)}
+                              className="border-red-600 text-red-600 hover:bg-red-50"
+                            >
+                              Cancella
+                            </Button>
                           </div>
                         </td>
                       </tr>
