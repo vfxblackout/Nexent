@@ -223,10 +223,12 @@ const AdminDashboard = () => {
                       {t.admin.garanzie.form.dataInizio}
                     </label>
                     <Input
-                      type="date"
+                      type="text"
                       required
                       value={formData.data_inizio}
                       onChange={(e) => setFormData({ ...formData, data_inizio: e.target.value })}
+                      placeholder="dd/mm/yyyy (es. 15/03/2025)"
+                      pattern="\d{2}/\d{2}/\d{4}"
                       className="w-full"
                     />
                   </div>
@@ -236,10 +238,12 @@ const AdminDashboard = () => {
                       {t.admin.garanzie.form.dataCessazione}
                     </label>
                     <Input
-                      type="date"
+                      type="text"
                       required
                       value={formData.data_cessazione}
                       onChange={(e) => setFormData({ ...formData, data_cessazione: e.target.value })}
+                      placeholder="dd/mm/yyyy (es. 15/03/2026)"
+                      pattern="\d{2}/\d{2}/\d{4}"
                       className="w-full"
                     />
                   </div>
