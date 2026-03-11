@@ -103,10 +103,14 @@ async def get_garanzia_qr(garanzia_id: str):
     img.save(img_byte_arr, format='PNG')
     img_byte_arr.seek(0)
     
+    # Use numero_garanzia or contraente for filename
+    filename_part = garanzia.get('numero_garanzia', garanzia.get('contraente', garanzia_id))
+    safe_filename = filename_part.replace(' ', '_').replace('/', '-')
+    
     return StreamingResponse(
         img_byte_arr, 
         media_type="image/png",
         headers={
-            "Content-Disposition": f"attachment; filename=qr_garanzia_{garanzia['nome_completo'].replace(' ', '_')}.png"
+            "Content-Disposition": f"attachment; filename=qr_garanzia_{safe_filename}.png"
         }
     )
