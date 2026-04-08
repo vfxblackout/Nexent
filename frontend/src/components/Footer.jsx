@@ -41,8 +41,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                <a href="mailto:info@nexentbank.it" className="text-sm text-gray-400 hover:text-emerald-400 transition-colors duration-200">
-                  info@nexentbank.it
+                <a href="mailto:info@nexentbanknv.it" className="text-sm text-gray-400 hover:text-emerald-400 transition-colors duration-200">
+                  info@nexentbanknv.it
                 </a>
               </div>
               <div className="flex items-start space-x-3">
