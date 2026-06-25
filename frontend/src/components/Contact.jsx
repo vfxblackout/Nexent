@@ -63,11 +63,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.contact.info.phone}</h3>
-                  <a href="tel:+393478569658" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block mb-1">
-                    +39 347 856 9658
+                  <a href="tel:+31661670841" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block mb-1">
+                    +31 661670841
                   </a>
                   <a href="tel:+310620940564" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block">
-                    +31 06 2094 0564
+                    +31 0620940564
                   </a>
                 </div>
               </div>
