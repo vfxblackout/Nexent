@@ -83,8 +83,8 @@ const Contact = () => {
                   <a href="mailto:info@nexentbanknv.it" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block mb-1">
                     info@nexentbanknv.it
                   </a>
-                  <a href="mailto:nexent.lps@pec.it" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block">
-                    nexent.lps@pec.it
+                  <a href="mailto:nexentbanknv@legalmail.it" className="text-emerald-600 hover:text-emerald-700 transition-colors duration-200 block">
+                    nexentbanknv@legalmail.it
                   </a>
                 </div>
               </div>
